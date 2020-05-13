@@ -26,7 +26,14 @@ require_once '../inc/functions.php';
 function addRotative($minimum, $maximum) {
     $resultat = 0;
     // A toi de jouer !
-    
+    //$minimum = 4;
+    //$maximum = 10;
+
+    for ($minimum; $minimum <= $maximum; $minimum++) {
+        $resultat = $resultat + $minimum;
+    }
+
+    var_dump($resultat);
     return $resultat;
 }
 
