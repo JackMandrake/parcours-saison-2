@@ -26,7 +26,10 @@ require_once '../inc/functions.php';
  * $somme = addition(1, 3, 1); // => $somme sera égal à 5
  */
 
-
+function addition ($nombre1, $nombre2) {
+    $somme = $nombre1 + $nombre2;
+    return $somme;
+};
 
 
 

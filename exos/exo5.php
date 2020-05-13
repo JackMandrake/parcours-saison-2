@@ -15,7 +15,9 @@ require_once '../inc/functions.php';
  * Analysez l'URL pour comprendre quelles valeurs sont attendues dans chacune de ces variables
  */
 
-
+$jeu = $_GET['game'];
+$premierJoueur = $_GET['player1'];
+$secondJoueur = $_GET['player2'];
 
 
 

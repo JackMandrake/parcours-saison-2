@@ -24,7 +24,7 @@ require_once '../inc/functions.php';
  */
 
  // A toi de jouer pour l'étape a)
-
+ $characters = ["Kyle" , "Stan" , "Kenny"];
 
 /*
  * Tests du tableau avec uniquement Stan, Kyle et Kenny
@@ -34,7 +34,7 @@ check('2a');
 
 // A toi de jouer pour l'étape b)
 
-
+$characters [] = "Cartman";
 /*
  * Tests du tableau avec Stan, Kyle, Kenny et désormais Cartman
  * Pas touche !
@@ -42,7 +42,8 @@ check('2a');
 check('2b');
 
 // A toi de jouer pour le bonus
-
+$dead = "Kenny";
+unset ($characters[array_search($dead, $characters)]);
 
 /*
  * Tests du bonus
