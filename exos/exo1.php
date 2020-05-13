@@ -26,10 +26,20 @@ require_once '../inc/functions.php';
  * $somme = addition(1, 3, 1); // => $somme sera égal à 5
  */
 
-function addition ($nombre1, $nombre2) {
+function addition ($nombre1, $nombre2, $nombre3 = null) {
     $somme = $nombre1 + $nombre2;
+    // En commentaire, on tiens compte du 3ème si celui-ci n'est pas null 
+    //if (isset($nombre3)){
+    //    $somme += $nombre3;
+    //};
     return $somme;
 };
+// exo1 réussi avec succès 
+/** 
+ *  pour le bonus, réussi aussi avec l'auto correction, j'ai bien définir ma valeur en nulle
+ * par contre, l'utilisation de la variable $nombre3 dans le calcul somme, n'était pas judicieuse, malgré la réussite du bonus
+ * j'aurais du y mettre une condition pour qu'il soit utilisé si non null
+ * */
 
 
 

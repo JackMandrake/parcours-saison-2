@@ -19,7 +19,7 @@ $jeu = $_GET['game'];
 $premierJoueur = $_GET['player1'];
 $secondJoueur = $_GET['player2'];
 
-
+// exercice parfaitement réussi en 2 min
 
 
 /*

@@ -28,8 +28,12 @@ function addRotative($minimum, $maximum) {
     // A toi de jouer !
     //$minimum = 4;
     //$maximum = 10;
-
-    for ($minimum; $minimum <= $maximum; $minimum++) {
+/**
+ * Dans la correction de la boucle for ils ont réatribué $minimum sur une autre variable $compteur, ce qui est
+ * judicieux pour conserver les valeurs initiales sans les altérer
+ */
+// AVEC LA BOUCLE FOR
+    for ($minimum; $minimum <= $maximum; $minimum++) { // $compteur = $minimum ; $compteur <= $maximum ; $compteur++
         $resultat = $resultat + $minimum;
     }
 
@@ -37,7 +41,15 @@ function addRotative($minimum, $maximum) {
     return $resultat;
 }
 
+// AVEC LA BOUCLE WHILE
 
+/**
+ * $compteur = $minimum  (comme ci-dessus initialisation de la variable qui récupère la valeure minimum)
+ * while ($compteur <= $maximum) { (condition d'arrêt de la boucle)
+ *  $resultat += compteur; (addition du compteur au résultat obtenu le tour précédent)
+ *  $compteur++; (et on incrémente le compteur)
+ * }
+ */
 
 
 

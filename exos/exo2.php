@@ -45,6 +45,14 @@ check('2b');
 $dead = "Kenny";
 unset ($characters[array_search($dead, $characters)]);
 
+/**
+ * Ma solution a fonctionneé, en utilisant le "array_search", j'aurais pu, comme le préconise le corrigé
+ * utiliser mon unset directement avec le numéro de l'index de kenny
+ * 
+ *  unset($characters[2]);
+ * 
+ */
+
 /*
  * Tests du bonus
  * Pas touche !
